@@ -40,6 +40,13 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency><!-- Reproduce https://github.com/Azure/azure-sdk-for-java/issues/18876 -->
+                <groupId>com.fasterxml.jackson</groupId>
+                <artifactId>jackson-bom</artifactId>
+                <version>2.12.1</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
             <dependency>
                 <groupId>com.azure</groupId>
                 <artifactId>azure-sdk-bom</artifactId>
